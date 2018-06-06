@@ -1,0 +1,9 @@
+*.jp*g
+*.pdf
+
+# Standard
+.*
+
+# Exceptions
+!/.editorconfig
+!.git*
