@@ -21,3 +21,9 @@
   * 1854  Added a background image to the map.
   * 1926  Overrode various default map settings.
   * 1931  Bug fixed: Leaflet's styles weren't loaded properly.
+  * 2351  Achieved smooth hiding of the markers.
+
+* 180623
+
+  * 1932  Improved the scaling and the adjusting algorithms of the conversion script.
+  * 2105  Added labels to the polygons.

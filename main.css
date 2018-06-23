@@ -4,3 +4,13 @@
   width: 80%;
   border: 1px dotted #666;
 }
+
+.leaflet-marker-pane, .leaflet-shadow-pane {
+
+  transition: opacity 0.2s;
+}
+
+.z5 .leaflet-marker-pane, .z5 .leaflet-shadow-pane {
+
+  opacity: 0;
+}
