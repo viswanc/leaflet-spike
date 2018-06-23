@@ -27,3 +27,5 @@
 
   * 1932  Improved the scaling and the adjusting algorithms of the conversion script.
   * 2105  Added labels to the polygons.
+  * 2354  Started hiding overflowing labels.
+  * 2359  Started hiding the background image on higher zoom levels.

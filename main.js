@@ -3,6 +3,7 @@ var g = (function () {
   'use strict';
 
   var bounds = [[-20,-20], [20,20]]
+  , temp
   , zoom0 = 5
   , map = L.map('map', {
 
@@ -26,9 +27,10 @@ var g = (function () {
       var name = feature.properties.name;
 
       if(name && layer.getBounds) {
-        var label = L.marker(layer.getBounds().getCenter(), {
+        var bounds = layer.getBounds()
+        , label = L.marker(bounds.getCenter(), {
         icon: L.divIcon({
-            className: 'label',
+            className: 'label ' + (((bounds.getNorth() - bounds.getSouth() < 0.35) || (bounds.getEast() - bounds.getWest() < 0.7)) ? 'small' : 'big'),
             html: name,
             iconSize: [20, 20] // #Fix: Skip hardcoding the value.
           })

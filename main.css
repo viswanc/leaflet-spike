@@ -5,12 +5,17 @@
   border: 1px dotted #666;
 }
 
-.leaflet-marker-pane, .leaflet-shadow-pane {
+.leaflet-image-layer, .leaflet-marker-pane, .leaflet-shadow-pane, .label {
 
-  transition: opacity 0.2s;
+  transition: opacity 0.7s;
 }
 
-.z5 .leaflet-marker-pane, .z5 .leaflet-shadow-pane {
+.leaflet-image-layer, .z5 .leaflet-marker-pane, .z5 .leaflet-shadow-pane, .z6 .small {
 
   opacity: 0;
+}
+
+.z5 .leaflet-image-layer {
+
+  opacity: 1;
 }
