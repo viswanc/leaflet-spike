@@ -29,3 +29,12 @@
   * 2105  Added labels to the polygons.
   * 2354  Started hiding overflowing labels.
   * 2359  Started hiding the background image on higher zoom levels.
+
+* 180625
+
+  * 0814  GeoJSON files could be now now passed as a query string.
+  * 0934  Added labels to the points in GeoJSON.
+
+* 180626
+
+  * 0217  Prepared the app for a workable demo.

@@ -1,21 +1,75 @@
+/* Layout */
 #map {
 
   height: 500px;
   width: 80%;
   border: 1px dotted #666;
+  background: #efeff0;
 }
 
-.leaflet-image-layer, .leaflet-marker-pane, .leaflet-shadow-pane, .label {
+.venue, .leaflet-image-layer, .leaflet-marker-pane .marker .fas, .leaflet-shadow-pane, .label {
 
   transition: opacity 0.7s;
-}
-
-.leaflet-image-layer, .z5 .leaflet-marker-pane, .z5 .leaflet-shadow-pane, .z6 .small {
-
   opacity: 0;
 }
 
-.z5 .leaflet-image-layer {
+.z4 .venue, .z4 .leaflet-image-layer, .z4 div.label.venue, .z5 .leaflet-image-layer, .z5 .leaflet-marker-pane .fas.fa-star, .z6 .leaflet-marker-pane .fas, .z7 .leaflet-marker-pane .fas, .z6 .big, .z7 .big, .z7 .small {
 
   opacity: 1;
+}
+
+.label.venue {
+
+  color: #222;
+  font-size: 20pt;
+  font-weight: 900;
+  text-shadow: 2px 2px #999;
+}
+
+/* Styling */
+.fas {
+
+  width: 1em;
+  height: 1em;
+  padding: 0.4em;
+  font-size: 16pt;
+  text-align: center;
+  background: #fff;
+  color: #666;
+  border: 1px solid black;
+  border-radius: 50%;
+  border-color: #999;
+}
+
+.fas.fa-star {
+
+  color: gold;
+  text-shadow: 2px 2px #eee;
+  border-color: #eee;
+  font-size: 12pt;
+}
+
+/* Overrides */
+.leaflet-div-icon {
+  background: none;
+  border: none;
+}
+
+/* Temp */
+.leaflet-shadow-pane { /* Hide the shadow pane. */
+
+  display: none;
+}
+
+img.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive { /* Hide the marker icons */
+
+  display: none;
+}
+
+.leaflet-image-layer img {
+
+  width: 960px;
+  height: 540px;
+  left: 110;
+  top: -20px;
 }
