@@ -38,3 +38,13 @@
 * 180626
 
   * 0217  Prepared the app for a workable demo.
+
+* 180627
+
+  * 1838  Set the **CRS** of the map to CRS.Simple, to avoid the issues with **Spherical projection**.
+  * 1951  Set map.maxBounds to prevent the user from panning beyond the desired limit.
+
+* 180628
+
+  * 1647  Added a few more options, to the map settings.
+  * 1708  Found the right way to override the default markers.
